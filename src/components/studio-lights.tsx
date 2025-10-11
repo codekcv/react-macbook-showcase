@@ -23,7 +23,7 @@ export function StudioLights() {
         </group>
       </Environment>
 
-      {/* <spotLight
+      <spotLight
         position={[-2, 10, 5]}
         angle={0.15}
         decay={0}
@@ -42,7 +42,7 @@ export function StudioLights() {
         angle={0.15}
         decay={0.1}
         intensity={Math.PI * 1}
-      /> */}
+      />
     </group>
   );
 }
