@@ -50,7 +50,7 @@ export const Showcase = () => {
               <p>
                 It drives Apple intelligence on iPad Pro, so you can write,
                 create, and accomplish more with ease. All in a design that's
-                unbelievably thin, light, and powerrful.
+                unbelievably thin, light, and powerful.
               </p>
 
               <p>
