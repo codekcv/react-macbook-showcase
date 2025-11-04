@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { PresentationControls } from "@react-three/drei";
 import { useRef } from "react";
 import { Macbook16Model } from "../models/macbook-16";
@@ -52,7 +51,8 @@ export function ModelSwitcher({ scale, isMobile }: Props) {
   const smallMacbookRef = useRef<Group | null>(null);
   const largeMacbookRef = useRef<Group | null>(null);
 
-  const showLargeMacbook = scale === SCALE_LARGE_DESKTOP || scale === SCALE_LARGE_MOBILE;
+  const showLargeMacbook =
+    scale === SCALE_LARGE_DESKTOP || scale === SCALE_LARGE_MOBILE;
 
   const controlsConfig = {
     snap: true,
@@ -61,7 +61,6 @@ export function ModelSwitcher({ scale, isMobile }: Props) {
     azimuth: [-Infinity, Infinity],
     config: { mass: 1, tension: 0, friction: 26 },
   } as PresentationControlsConfig;
-
 
   useGSAP(() => {
     if (showLargeMacbook) {
