@@ -52,7 +52,7 @@ export function ModelSwitcher({ scale, isMobile }: Props) {
   const smallMacbookRef = useRef<Group | null>(null);
   const largeMacbookRef = useRef<Group | null>(null);
 
-  const showLargeMacbook = scale === SCALE_LARGE_DESKTOP || SCALE_LARGE_MOBILE;
+  const showLargeMacbook = scale === SCALE_LARGE_DESKTOP || scale === SCALE_LARGE_MOBILE;
 
   const controlsConfig = {
     snap: true,
