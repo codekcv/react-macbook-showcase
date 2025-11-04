@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import useMacbookStore from "../store";
 import { Canvas } from "@react-three/fiber";
-import { Macbook14Model } from "./models/macbook-14.jsx";
 import { StudioLights } from "./three/studio-lights.js";
 import { ModelSwitcher } from "./three/model-switcher.js";
 import { useMediaQuery } from "react-responsive";
@@ -17,7 +16,7 @@ export function ProductViewer() {
 
       <div className="controls">
         <p className="info">
-          MacBook Pro {scale} in {color} / Space Black
+          MacBook Pro | Available in 14" & 16" in Space Gray & Dark colors
         </p>
 
         <div className="flex-center gap-5 mt-5">

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { PresentationControls } from "@react-three/drei";
 import { useRef } from "react";
 import { Macbook16Model } from "../models/macbook-16";
@@ -12,6 +13,9 @@ type Props = {
 
 const ANIMATION_DURATION = 1;
 const OFFSET_DISTANCE = 5;
+
+const SCALE_LARGE_DESKTOP = 0.08;
+const SCALE_LARGE_MOBILE = 0.05;
 
 const fadeMeshes = (group, opacity) => {
   if (!group) return;
@@ -34,7 +38,7 @@ export function ModelSwitcher({ scale, isMobile }: Props) {
   const smallMacbookRef = useRef(null);
   const largeMacbookRef = useRef(null);
 
-  const showLargeMacbook = scale === 0.08 || scale === 0.05;
+  const showLargeMacbook = scale === SCALE_LARGE_DESKTOP || SCALE_LARGE_MOBILE;
 
   const controlsConfig = {
     snap: true,
@@ -42,7 +46,6 @@ export function ModelSwitcher({ scale, isMobile }: Props) {
     zoom: 1,
     azimuth: [-Infinity, Infinity],
     config: { mass: 1, tension: 0, friction: 26 },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } as any;
 
   console.log(0, showLargeMacbook);
