@@ -6,8 +6,8 @@ import { ScrollTrigger } from "gsap/all";
 import { Showcase } from "./components/showcase";
 import Performance from "./components/performance";
 import { Highlights } from "./components/highlights";
-import { Footer } from "./components/footer";
 import Features from "./components/features";
+import Footer from "./components/footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
