@@ -62,7 +62,6 @@ export function ModelSwitcher({ scale, isMobile }: Props) {
     config: { mass: 1, tension: 0, friction: 26 },
   } as PresentationControlsConfig;
 
-  console.log(0, showLargeMacbook);
 
   useGSAP(() => {
     if (showLargeMacbook) {
