@@ -82,7 +82,7 @@ const Performance = () => {
       <div className="wrapper">
         {performanceImages.map((item, index) => (
           <img
-            key={index}
+            key={item.id}
             src={item.src}
             className={item.id}
             alt={`Performance Image #${index + 1}`}
